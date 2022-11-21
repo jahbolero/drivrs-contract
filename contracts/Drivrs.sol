@@ -8,7 +8,7 @@ import "./ERC721AQueryable.sol";
 import "./operator-filter-registry/src/OperatorFilterer.sol";
 
 
-contract Dvrs is ERC721AQueryable, Ownable, OperatorFilterer{
+contract Drivrs is ERC721AQueryable, Ownable, OperatorFilterer{
     uint256 public MAX_SUPPLY = 8888;
 
     uint256 public WL_PRICE = 0.06 ether;
@@ -43,7 +43,7 @@ contract Dvrs is ERC721AQueryable, Ownable, OperatorFilterer{
     address signer;
     mapping(bytes32 => bool) public usedDigests;
 
-    constructor() ERC721A("Dvrs", "DVRS") OperatorFilterer(address(0x3cc6CddA760b79bAfa08dF41ECFA224f810dCeB6), false) {}
+    constructor() ERC721A("Drivrs", "DRIVRS") OperatorFilterer(address(0x3cc6CddA760b79bAfa08dF41ECFA224f810dCeB6), false) {}
 
     modifier isSecured(uint8 mintType) {
         require(

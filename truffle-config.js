@@ -85,8 +85,8 @@ module.exports = {
       confirmations: 2,
       timeoutBlocks: 200,
       skipDryRun: true,
-      gas: 4335329,
-      gasPrice: 25000000000,
+      gas: 5335329,
+      gasPrice: 250000000000,
     },
     rinkeby: {
       provider: () => new HDWalletProvider(privateKey, `wss://rinkeby.infura.io/ws/v3/${process.env.INFURA_KEY}`),
@@ -95,7 +95,7 @@ module.exports = {
       timeoutBlocks: 200,
       skipDryRun: true,
       gas: 4335329,
-      gasPrice: 25000000000,
+      gasPrice: 150000000000,
     },
     mainnet: {
       provider: () => new HDWalletProvider(mainnetPK, `wss://mainnet.infura.io/ws/v3/${process.env.INFURA_KEY}`),
