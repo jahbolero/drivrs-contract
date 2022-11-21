@@ -36,7 +36,7 @@ contract Drivrs is ERC721AQueryable, Ownable, OperatorFilterer{
     mapping(address => uint256) addressBlockBought;
 
     address public constant ADDRESS_1 =
-        0x188A3c584F0dE9ee0eABe04316A94A41F0867C0C; //Owner
+        0x779E3847551fA09D15A0aE2aE86b60a912eA00AD; //Owner
     address public constant ADDRESS_2 =
         0x188A3c584F0dE9ee0eABe04316A94A41F0867C0C; //ZL
 
@@ -173,7 +173,7 @@ contract Drivrs is ERC721AQueryable, Ownable, OperatorFilterer{
     function withdraw() external onlyOwner {
         uint256 balance = address(this).balance;
         require(balance > 0, "No balance to withdraw");
-        payable(ADDRESS_2).transfer((balance * 800) / 10000);
+        payable(ADDRESS_2).transfer((balance * 700) / 10000);
         payable(ADDRESS_1).transfer(address(this).balance);
     }
 
