@@ -11,8 +11,8 @@ import "./operator-filter-registry/src/OperatorFilterer.sol";
 contract Drivrs is ERC721AQueryable, Ownable, OperatorFilterer{
     uint256 public MAX_SUPPLY = 8888;
 
-    uint256 public WL_PRICE = 0.06 ether;
-    uint256 public PUBLIC_PRICE = 0.06 ether;
+    uint256 public WL_PRICE = 0.02 ether;
+    uint256 public PUBLIC_PRICE = 0.04 ether;
 
     uint256 public MINT_LIMIT = 1;
     uint256 public TRANSACTION_LIMIT = 1;
@@ -36,7 +36,7 @@ contract Drivrs is ERC721AQueryable, Ownable, OperatorFilterer{
     mapping(address => uint256) addressBlockBought;
 
     address public constant ADDRESS_1 =
-        0x779E3847551fA09D15A0aE2aE86b60a912eA00AD; //Owner
+        0x294FE0982d4A700650eFAb41c8C59998d4A2fdb9; //Owner
     address public constant ADDRESS_2 =
         0x188A3c584F0dE9ee0eABe04316A94A41F0867C0C; //ZL
 
